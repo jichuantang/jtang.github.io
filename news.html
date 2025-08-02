@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Metadata for the Webpage -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Jichuan Tang - News</title>
+
+   <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+   <!-- Bootstrap CSS files-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+   <!-- jQuery UI CSS (optional) -->
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+   <!-- Google web fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600" rel="stylesheet">
+
+   <!-- Font Awesome Web Icons -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+   <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+   <!-- Local styles -->
+   <link rel="stylesheet" href="css/main.css">
+
+   <style>
+      .news-item {
+         margin-bottom: 30px;
+         padding: 20px;
+         border: 1px solid #e0e0e0;
+         border-radius: 8px;
+         background-color: #fafafa;
+      }
+
+      .news-item:hover {
+         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+         transition: box-shadow 0.3s ease;
+      }
+
+      .news-date {
+         color: #666;
+         font-style: italic;
+         margin-bottom: 10px;
+      }
+
+      .news-title {
+         font-weight: bold;
+         margin-bottom: 15px;
+         color: #20364c;
+      }
+
+      .news-content {
+         margin-bottom: 15px;
+         line-height: 1.6;
+      }
+
+      .news-image {
+         max-width: 100%;
+         height: auto;
+         border-radius: 5px;
+         margin: 10px 0;
+      }
+
+      .news-gallery {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+         margin: 15px 0;
+      }
+
+      .news-gallery img {
+         max-width: 200px;
+         height: 150px;
+         object-fit: cover;
+         border-radius: 5px;
+         cursor: pointer;
+      }
+
+      .news-gallery img:hover {
+         opacity: 0.8;
+         transition: opacity 0.3s ease;
+      }
+
+      .news-tag {
+         display: inline-block;
+         background-color: #1585cf;
+         color: white;
+         padding: 4px 8px;
+         border-radius: 12px;
+         font-size: 12px;
+         margin-right: 5px;
+         margin-bottom: 5px;
+      }
+
+      @media (max-width: 768px) {
+         .news-gallery img {
+            max-width: 100px;
+            height: 75px;
+         }
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <!-- navbar include -->
+   <div w3-include-html="navbar.html"></div>
+
+   <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+
+   <!-- Main content -->
+   <div id="main-container" class="container">
+
+      <div class="row">
+         <div class="col-sm-12">
+            <h1>News & Events</h1>
+            <p>Latest updates, achievements, and memorable moments from my academic journey.</p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-sm-12">
+
+            <!-- News Item 1 -->
+            <div class="news-item">
+               <div class="news-date">
+                  <i class="fas fa-calendar-alt"></i> August 2025
+               </div>
+               <h4 class="news-title">SAI Fellowship Award</h4>
+               <div class="news-content">
+                  <p>Excited to announce that I have been selected as a Scientific Artificial Intelligence (SAI) Fellow at the University of Notre Dame! This fellowship will support my research in integrating AI methods with structural engineering applications.</p>
+                  <div class="news-tags">
+                     <span class="news-tag">Fellowship</span>
+                     <span class="news-tag">AI Research</span>
+                     <span class="news-tag">Notre Dame</span>
+                  </div>
+               </div>
+               <!-- Add your images here -->
+               <!-- <img src="img/sai_fellowship.jpg" alt="SAI Fellowship Award" class="news-image"> -->
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="news-item">
+               <div class="news-date">
+                  <i class="fas fa-calendar-alt"></i> May 2025
+               </div>
+               <h4 class="news-title">EMI Conference Presentation</h4>
+               <div class="news-content">
+                  <p>Successfully presented my research on "Using deep operators to create spatio-temporal surrogates for dynamical systems under uncertainty" at the Engineering Mechanics Institute Conference (EMI 2025) in Anaheim, CA.</p>
+                  <div class="news-tags">
+                     <span class="news-tag">Conference</span>
+                     <span class="news-tag">Deep Learning</span>
+                     <span class="news-tag">Research</span>
+                  </div>
+               </div>
+               <!-- Example of image gallery -->
+               <!-- <div class="news-gallery">
+                  <img src="img/emi_2025_presentation.jpg" alt="EMI 2025 Presentation">
+                  <img src="img/emi_2025_poster.jpg" alt="Research Poster">
+                  <img src="img/emi_2025_group.jpg" alt="Conference Group Photo">
+               </div> -->
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="news-item">
+               <div class="news-date">
+                  <i class="fas fa-calendar-alt"></i> January 2025
+               </div>
+               <h4 class="news-title">New Publication on ArXiv</h4>
+               <div class="news-content">
+                  <p>Our latest paper "A Full-field Extended Deep Operator Network for Spatio-temporal Surrogates in Structural Dynamic" has been published on arXiv. This work presents a novel approach to creating surrogate models for complex structural dynamics problems.</p>
+                  <div class="news-tags">
+                     <span class="news-tag">Publication</span>
+                     <span class="news-tag">Deep Learning</span>
+                     <span class="news-tag">Structural Dynamics</span>
+                  </div>
+               </div>
+               <!-- Add publication-related images -->
+               <!-- <img src="img/deeponet_research.jpg" alt="Deep Operator Network Research" class="news-image"> -->
+            </div>
+
+            <!-- News Item 4 -->
+            <div class="news-item">
+               <div class="news-date">
+                  <i class="fas fa-calendar-alt"></i> September 2023
+               </div>
+               <h4 class="news-title">Started Ph.D. at Notre Dame</h4>
+               <div class="news-content">
+                  <p>Began my doctoral studies in Civil Engineering at the University of Notre Dame, joining the Brewick Group under the supervision of Prof. Patrick Brewick. Excited to embark on this new chapter of my academic journey!</p>
+                  <div class="news-tags">
+                     <span class="news-tag">PhD</span>
+                     <span class="news-tag">Notre Dame</span>
+                     <span class="news-tag">New Beginning</span>
+                  </div>
+               </div>
+               <!-- Campus/lab photos -->
+               <!-- <div class="news-gallery">
+                  <img src="img/notre_dame_campus.jpg" alt="Notre Dame Campus">
+                  <img src="img/fitzpatrick_hall.jpg" alt="Fitzpatrick Hall">
+                  <img src="img/lab_first_day.jpg" alt="First Day in Lab">
+               </div> -->
+            </div>
+
+            <!-- News Item 5 -->
+            <div class="news-item">
+               <div class="news-date">
+                  <i class="fas fa-calendar-alt"></i> June 2022
+               </div>
+               <h4 class="news-title">Master's Graduation - Tianjin University</h4>
+               <div class="news-content">
+                  <p>Successfully defended my master's thesis on "Research on Control Method for Real-time Hybrid Simulation Based on Reinforcement Learning" and graduated with honors (Summa Cum Laude) from Tianjin University.</p>
+                  <div class="news-tags">
+                     <span class="news-tag">Graduation</span>
+                     <span class="news-tag">Master's Degree</span>
+                     <span class="news-tag">Honors</span>
+                  </div>
+               </div>
+               <!-- Graduation photos -->
+               <!-- <div class="news-gallery">
+                  <img src="img/graduation_ceremony.jpg" alt="Graduation Ceremony">
+                  <img src="img/thesis_defense.jpg" alt="Thesis Defense">
+                  <img src="img/graduation_family.jpg" alt="Graduation with Family">
+               </div> -->
+            </div>
+
+            <!-- Template for adding new news items -->
+            <!-- 
+            <div class="news-item">
+               <div class="news-date">
+                  <i class="fas fa-calendar-alt"></i> [DATE]
+               </div>
+               <h4 class="news-title">[NEWS TITLE]</h4>
+               <div class="news-content">
+                  <p>[NEWS DESCRIPTION]</p>
+                  <div class="news-tags">
+                     <span class="news-tag">[Tag1]</span>
+                     <span class="news-tag">[Tag2]</span>
+                  </div>
+               </div>
+               <img src="img/[IMAGE_NAME].jpg" alt="[ALT TEXT]" class="news-image">
+               OR for multiple images:
+               <div class="news-gallery">
+                  <img src="img/[IMAGE1].jpg" alt="[ALT TEXT 1]">
+                  <img src="img/[IMAGE2].jpg" alt="[ALT TEXT 2]">
+               </div>
+            </div>
+            -->
+
+         </div>
+      </div>
+
+   </div>
+
+   <!-- Back-to-top button -->
+   <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
+
+   <!-- footer include -->
+   <div w3-include-html="footer.html"></div>
+
+   <!-- jQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <!-- Bootstrap JS Library -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+   <!-- html file include script | used for navbar and footer -->
+   <script src="js/w3data.js"></script>
+   <script>
+      w3IncludeHTML()
+   </script>
+
+   <!-- Local scripts -->
+   <script src="js/main.js"></script>
+
+   <script>
+      $(document).ready(function() {
+         $("li#news a").addClass("active");
+         $("li#news a").addClass("hvr-bubble-bottom");
+
+         // Optional: Add click functionality for gallery images
+         $('.news-gallery img').click(function() {
+            // You can add lightbox functionality here if desired
+            var src = $(this).attr('src');
+            window.open(src, '_blank');
+         });
+      });
+   </script>
+
+</body>
+
+</html>
