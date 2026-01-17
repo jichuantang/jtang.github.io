@@ -500,3 +500,55 @@ dd {
   background-color: #1585cf;
   opacity: .8;
 }
+
+/* Make the website width responsive to larger screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 90%;
+    max-width: 1600px;
+  }
+}
+
+/* Mobile adaptive adjustments */
+@media (max-width: 767px) {
+  /* Reduce base font size for better readability on small screens */
+  p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
+      font-size: 1.3rem; 
+  }
+
+  /* Reduce header margins and size */
+  h1 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+  }
+
+  h3 {
+      margin-top: 1.5rem !important;
+  }
+
+  /* Reduce spacer height */
+  .spacer-div-3 {
+      height: 25px !important;
+  }
+
+  /* Adjust navbar brand size to fit better */
+  .navbar-brand {
+      font-size: 1.8rem !important;
+  }
+
+  /* Remove left margin on project panels for mobile */
+  #projects .panel {
+      margin-left: 0;
+  }
+
+  /* Adjust back-to-top button position */
+  #topper {
+      bottom: 60px;
+      right: 10px;
+  }
+  
+  /* Make embedded iframes (like CV) more accessible */
+  iframe {
+      max-height: 500px;
+  }
+}
