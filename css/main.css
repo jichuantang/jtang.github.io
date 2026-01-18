@@ -108,15 +108,32 @@ blockquote footer {
   text-indent: -1.8rem;
 }
 
+/* Publications list styling */
 .publications {
   list-style-type: none;
-  padding-left: 2.5rem;
+  padding-left: 0;
 }
 
 .publications li {
-  margin-left: 2rem;
-  text-indent: -2.5rem;
-  ;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 1.6;
+}
+
+.publications li:last-child {
+  border-bottom: none;
+}
+
+.publications strong {
+  color: #20364c;
+}
+
+.publications .btn-xs {
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 11px;
+  padding: 3px 8px;
 }
 
 /* Links */
