@@ -48,33 +48,70 @@
 
    <style>
       .news-item {
-         margin-bottom: 30px;
-         padding: 20px;
+         margin-bottom: 15px;
          border: 1px solid #e0e0e0;
          border-radius: 8px;
          background-color: #fafafa;
+         overflow: hidden;
       }
 
-      .news-item:hover {
-         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-         transition: box-shadow 0.3s ease;
+      .news-header {
+         padding: 15px 20px;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         gap: 15px;
+         transition: background-color 0.3s ease;
+      }
+
+      .news-header:hover {
+         background-color: #f0f0f0;
       }
 
       .news-date {
          color: #666;
          font-style: italic;
-         margin-bottom: 10px;
+         font-size: 14px;
+         min-width: 120px;
+         margin: 0;
       }
 
       .news-title {
          font-weight: bold;
-         margin-bottom: 15px;
          color: #20364c;
+         margin: 0;
+         flex: 1;
+         font-size: 18px;
+      }
+
+      .news-toggle {
+         color: #1585cf;
+         font-size: 20px;
+         transition: transform 0.3s ease;
+         min-width: 24px;
+         text-align: center;
+      }
+
+      .news-item.active .news-toggle {
+         transform: rotate(180deg);
       }
 
       .news-content {
-         margin-bottom: 15px;
+         padding: 0 20px;
+         max-height: 0;
+         overflow: hidden;
+         transition: max-height 0.4s ease, padding 0.4s ease;
+      }
+
+      .news-item.active .news-content {
+         max-height: 2000px;
+         padding: 20px;
+         border-top: 1px solid #e0e0e0;
+      }
+
+      .news-content p {
          line-height: 1.6;
+         margin-bottom: 15px;
       }
 
       .news-image {
@@ -147,10 +184,15 @@
 
             <!-- News Item New -->
             <div class="news-item">
-               <div class="news-date">
-                  <i class="fas fa-calendar-alt"></i> January 2026
+               <div class="news-header">
+                  <div class="news-date">
+                     <i class="fas fa-calendar-alt"></i> January 2026
+                  </div>
+                  <h4 class="news-title">UPR SAI Winter School</h4>
+                  <div class="news-toggle">
+                     <i class="fas fa-chevron-down"></i>
+                  </div>
                </div>
-               <h4 class="news-title">UPR SAI Winter School</h4>
                <div class="news-content">
                   <p>Attended the 2026 UPR-ND Winter School for Scientific Artificial Intelligence at University of Puerto Rico Mayagüez. Delivered an applied tutorial titled "Neural Operators for Engineering Applications", presented a research poster, and mentored undergraduate hackathon participants in the development of personalized AI agents.</p>
                   <div class="news-tags">
@@ -172,10 +214,15 @@
 
             <!-- News Item 1 -->
             <div class="news-item">
-               <div class="news-date">
-                  <i class="fas fa-calendar-alt"></i> August 2025
+               <div class="news-header">
+                  <div class="news-date">
+                     <i class="fas fa-calendar-alt"></i> August 2025
+                  </div>
+                  <h4 class="news-title">SAI Fellowship Award</h4>
+                  <div class="news-toggle">
+                     <i class="fas fa-chevron-down"></i>
+                  </div>
                </div>
-               <h4 class="news-title">SAI Fellowship Award</h4>
                <div class="news-content">
                   <p>Excited to announce that I have been selected as a Scientific Artificial Intelligence (SAI) Fellow at the University of Notre Dame! This fellowship will support my research in integrating AI methods with structural engineering applications.</p>
                   <div class="news-tags">
@@ -190,10 +237,15 @@
 
             <!-- News Item 2 -->
             <div class="news-item">
-               <div class="news-date">
-                  <i class="fas fa-calendar-alt"></i> May 2025
+               <div class="news-header">
+                  <div class="news-date">
+                     <i class="fas fa-calendar-alt"></i> May 2025
+                  </div>
+                  <h4 class="news-title">EMI Conference Presentation</h4>
+                  <div class="news-toggle">
+                     <i class="fas fa-chevron-down"></i>
+                  </div>
                </div>
-               <h4 class="news-title">EMI Conference Presentation</h4>
                <div class="news-content">
                   <p>Successfully presented my research on "Using deep operators to create spatio-temporal surrogates for dynamical systems under uncertainty" at the Engineering Mechanics Institute Conference (EMI 2025) in Anaheim, CA.</p>
                   <div class="news-tags">
@@ -212,10 +264,15 @@
 
             <!-- News Item 3 -->
             <div class="news-item">
-               <div class="news-date">
-                  <i class="fas fa-calendar-alt"></i> January 2025
+               <div class="news-header">
+                  <div class="news-date">
+                     <i class="fas fa-calendar-alt"></i> January 2025
+                  </div>
+                  <h4 class="news-title">New Publication on ArXiv</h4>
+                  <div class="news-toggle">
+                     <i class="fas fa-chevron-down"></i>
+                  </div>
                </div>
-               <h4 class="news-title">New Publication on ArXiv</h4>
                <div class="news-content">
                   <p>Our latest paper "A Full-field Extended Deep Operator Network for Spatio-temporal Surrogates in Structural Dynamic" has been published on arXiv. This work presents a novel approach to creating surrogate models for complex structural dynamics problems.</p>
                   <div class="news-tags">
@@ -230,10 +287,15 @@
 
             <!-- News Item 4 -->
             <div class="news-item">
-               <div class="news-date">
-                  <i class="fas fa-calendar-alt"></i> September 2023
+               <div class="news-header">
+                  <div class="news-date">
+                     <i class="fas fa-calendar-alt"></i> September 2023
+                  </div>
+                  <h4 class="news-title">Started Ph.D. at Notre Dame</h4>
+                  <div class="news-toggle">
+                     <i class="fas fa-chevron-down"></i>
+                  </div>
                </div>
-               <h4 class="news-title">Started Ph.D. at Notre Dame</h4>
                <div class="news-content">
                   <p>Began my doctoral studies in Civil Engineering at the University of Notre Dame, joining the Brewick Group under the supervision of Prof. Patrick Brewick. Excited to embark on this new chapter of my academic journey!</p>
                   <div class="news-tags">
@@ -252,10 +314,15 @@
 
             <!-- News Item 5 -->
             <div class="news-item">
-               <div class="news-date">
-                  <i class="fas fa-calendar-alt"></i> June 2022
+               <div class="news-header">
+                  <div class="news-date">
+                     <i class="fas fa-calendar-alt"></i> June 2022
+                  </div>
+                  <h4 class="news-title">Master's Graduation - Tianjin University</h4>
+                  <div class="news-toggle">
+                     <i class="fas fa-chevron-down"></i>
+                  </div>
                </div>
-               <h4 class="news-title">Master's Graduation - Tianjin University</h4>
                <div class="news-content">
                   <p>Successfully defended my master's thesis on "Research on Control Method for Real-time Hybrid Simulation Based on Reinforcement Learning" and graduated with honors (Summa Cum Laude) from Tianjin University.</p>
                   <div class="news-tags">
@@ -275,22 +342,27 @@
             <!-- Template for adding new news items -->
             <!-- 
             <div class="news-item">
-               <div class="news-date">
-                  <i class="fas fa-calendar-alt"></i> [DATE]
+               <div class="news-header">
+                  <div class="news-date">
+                     <i class="fas fa-calendar-alt"></i> [DATE]
+                  </div>
+                  <h4 class="news-title">[NEWS TITLE]</h4>
+                  <div class="news-toggle">
+                     <i class="fas fa-chevron-down"></i>
+                  </div>
                </div>
-               <h4 class="news-title">[NEWS TITLE]</h4>
                <div class="news-content">
                   <p>[NEWS DESCRIPTION]</p>
                   <div class="news-tags">
                      <span class="news-tag">[Tag1]</span>
                      <span class="news-tag">[Tag2]</span>
                   </div>
-               </div>
-               <img src="img/[IMAGE_NAME].jpg" alt="[ALT TEXT]" class="news-image">
-               OR for multiple images:
-               <div class="news-gallery">
-                  <img src="img/[IMAGE1].jpg" alt="[ALT TEXT 1]">
-                  <img src="img/[IMAGE2].jpg" alt="[ALT TEXT 2]">
+                  <img src="img/[IMAGE_NAME].jpg" alt="[ALT TEXT]" class="news-image">
+                  OR for multiple images:
+                  <div class="news-gallery">
+                     <img src="img/[IMAGE1].jpg" alt="[ALT TEXT 1]">
+                     <img src="img/[IMAGE2].jpg" alt="[ALT TEXT 2]">
+                  </div>
                </div>
             </div>
             -->
@@ -325,6 +397,12 @@
       $(document).ready(function() {
          $("li#news a").addClass("active");
          $("li#news a").addClass("hvr-bubble-bottom");
+
+         // Toggle news item content
+         $('.news-header').click(function() {
+            var newsItem = $(this).closest('.news-item');
+            newsItem.toggleClass('active');
+         });
 
          // Optional: Add click functionality for gallery images
          $('.news-gallery img').click(function() {
