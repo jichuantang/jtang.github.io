@@ -3,6 +3,19 @@ body {
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
   background: #FFFFFF;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container improvements */
+#main-container {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* Colors */
@@ -28,11 +41,32 @@ body {
 }
 
 #education li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-left: 3px solid #b31b1b;
+  transition: all 0.3s ease;
+}
+
+#education li:hover {
+  background: #f0f0f0;
+  border-left-width: 5px;
+  transform: translateX(5px);
 }
 
 .university {
-  color: gray;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.university a {
+  color: #1585cf;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.university a:hover {
+  color: #b31b1b;
 }
 
 /* Typography */
@@ -43,7 +77,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: #666;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.section-title {
+  margin: 3rem 0 2rem !important;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #b31b1b !important;
+  border-bottom: 2px solid #b31b1b;
+  padding-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  margin: 2rem 0 1.5rem !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.research-interests-title {
+  margin: 2rem 0 1rem !important;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #20364c;
+}
+
+.research-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.research-list li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.research-list li:before {
+  content: "▸";
+  color: #b31b1b;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 h2, h3 {
@@ -135,15 +219,55 @@ blockquote footer {
 /* Contact info area, index.html page ------------------------------------------------- */
 #title {
   color: #20364c;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
+  line-height: 1.4;
 }
 
 #program {
-  color: gray;
+  color: #666;
   text-align: center;
+  font-size: 1rem;
+  display: block;
+  margin-top: 0.3rem;
+}
+
+#contact-table {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+#contact-table td {
+  padding: 0.6rem 0.5rem;
+  border: none;
+}
+
+#contact-table i {
+  color: #b31b1b;
+  font-size: 1.1rem;
+}
+
+#contact-table a {
+  color: #20364c;
+  transition: color 0.3s ease;
+}
+
+#contact-table a:hover {
+  color: #b31b1b;
+  text-decoration: none;
+}
+
+.img-thumbnail {
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.05);
 }
 
 iframe {
@@ -550,5 +674,33 @@ dd {
   /* Make embedded iframes (like CV) more accessible */
   iframe {
       max-height: 500px;
+  }
+
+  /* Responsive typography */
+  h1 {
+      font-size: 2rem;
+  }
+
+  .section-title {
+      font-size: 1.5rem;
+  }
+
+  .lead {
+      font-size: 1.05rem;
+  }
+
+  /* Better spacing on mobile */
+  #main-container {
+      margin-top: 1rem;
+      padding: 0 15px;
+  }
+
+  /* Adjust image thumbnail on mobile */
+  .img-thumbnail {
+      max-width: 200px;
+      margin: 0 auto;
+      display: block;
+  }
+}
   }
 }
