@@ -1,9 +1,9 @@
 /* Global page and element settings ----------------------------------------------------- */
 body {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Open Sans", Arial, sans-serif;
   background: #FFFFFF;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Colors */
@@ -44,8 +44,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin-bottom: 2.5rem;
-  font-size: 2.25rem;
+  margin-bottom: 2.75rem;
+  font-size: 2.6rem;
 }
 
 h2, h3 {
@@ -54,16 +54,16 @@ h2, h3 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 
 h4 {
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
 
 h4, h5, h6 {
@@ -71,7 +71,7 @@ h4, h5, h6 {
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 h6 {
@@ -117,8 +117,8 @@ cite {
 }
 
 p {
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 1.6rem;
 }
 
 blockquote footer {
@@ -173,7 +173,7 @@ blockquote footer {
   color: #20364c;
   margin-top: 2rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -265,14 +265,14 @@ nav {
 }
 
 .navbar-brand {
-  font-size: 1.4rem !important;
+  font-size: 1.5rem !important;
   font-weight: 500;
   color: white !important;
 }
 
 /* Navbar link size */
 .navbar-default .navbar-nav>li>a {
-  font-size: 1rem !important;
+  font-size: 1.05rem !important;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -408,7 +408,7 @@ footer {
   color: black;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 /* All Links panels ---------------------------------------------- */
@@ -446,7 +446,7 @@ dd {
 /* Customize container */
 @media only screen and (min-width: 767px) {
   .container {
-    max-width: 720px;
+    max-width: 760px;
   }
 }
 
@@ -455,7 +455,7 @@ dd {
 
   /* Remove the padding we set earlier */
   .container {
-    max-width: 960px;
+    max-width: 1040px;
   }
 }
 
@@ -524,8 +524,8 @@ dd {
 /* Make the website width responsive to larger screens */
 @media (min-width: 1200px) {
   .container {
-    width: 85%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1320px;
   }
 }
 
@@ -533,13 +533,13 @@ dd {
 @media (max-width: 767px) {
   /* Reduce base font size for better readability on small screens */
   p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
-      font-size: 0.95rem; 
+      font-size: 0.98rem; 
   }
 
   /* Reduce header margins and size */
   h1 {
-      margin-bottom: 1.75rem;
-      font-size: 1.9rem;
+      margin-bottom: 2rem;
+      font-size: 2.1rem;
   }
 
   h3 {
@@ -553,7 +553,7 @@ dd {
 
   /* Adjust navbar brand size to fit better */
   .navbar-brand {
-      font-size: 1.2rem !important;
+      font-size: 1.35rem !important;
   }
 
   /* Remove left margin on project panels for mobile */
