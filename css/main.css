@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
   background: #FFFFFF;
+  line-height: 1.6;
 }
 
 /* Colors */
@@ -43,20 +44,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.25rem;
 }
 
 h2, h3 {
-  margin: 0 0 2rem !important;
+  margin: 0 0 1.5rem !important;
   color: slategray;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 h4 {
   text-transform: uppercase;
+  font-size: 1.25rem;
 }
 
 h4, h5, h6 {
   color: slategray !important;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 .panel-heading h5 {
@@ -71,7 +90,7 @@ h4, h5, h6 {
 }
 
 p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -92,7 +111,7 @@ blockquote blockquote {
 }
 
 cite {
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
   display: block;
   margin-top: 1rem;
 }
@@ -154,7 +173,7 @@ blockquote footer {
   color: #20364c;
   margin-top: 2rem;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -246,14 +265,14 @@ nav {
 }
 
 .navbar-brand {
-  font-size: 2.15rem !important;
+  font-size: 1.4rem !important;
   font-weight: 500;
   color: white !important;
 }
 
 /* Navbar link size */
 .navbar-default .navbar-nav>li>a {
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -389,7 +408,7 @@ footer {
   color: black;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.1rem;
 }
 
 /* All Links panels ---------------------------------------------- */
@@ -427,7 +446,7 @@ dd {
 /* Customize container */
 @media only screen and (min-width: 767px) {
   .container {
-    max-width: 730px;
+    max-width: 720px;
   }
 }
 
@@ -436,7 +455,7 @@ dd {
 
   /* Remove the padding we set earlier */
   .container {
-    max-width: 900px;
+    max-width: 960px;
   }
 }
 
@@ -505,8 +524,8 @@ dd {
 /* Make the website width responsive to larger screens */
 @media (min-width: 1200px) {
   .container {
-    width: 90%;
-    max-width: 1600px;
+    width: 85%;
+    max-width: 1200px;
   }
 }
 
@@ -514,13 +533,13 @@ dd {
 @media (max-width: 767px) {
   /* Reduce base font size for better readability on small screens */
   p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
-      font-size: 1.3rem; 
+      font-size: 0.95rem; 
   }
 
   /* Reduce header margins and size */
   h1 {
-      margin-bottom: 2rem;
-      font-size: 2.5rem;
+      margin-bottom: 1.75rem;
+      font-size: 1.9rem;
   }
 
   h3 {
@@ -534,7 +553,7 @@ dd {
 
   /* Adjust navbar brand size to fit better */
   .navbar-brand {
-      font-size: 1.8rem !important;
+      font-size: 1.2rem !important;
   }
 
   /* Remove left margin on project panels for mobile */
