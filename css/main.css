@@ -90,7 +90,7 @@ h6 {
 }
 
 p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -111,7 +111,7 @@ blockquote blockquote {
 }
 
 cite {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
   display: block;
   margin-top: 1rem;
 }
@@ -272,7 +272,7 @@ nav {
 
 /* Navbar link size */
 .navbar-default .navbar-nav>li>a {
-  font-size: 1.05rem !important;
+  font-size: 1.1rem !important;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -533,7 +533,7 @@ dd {
 @media (max-width: 767px) {
   /* Reduce base font size for better readability on small screens */
   p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
-      font-size: 0.98rem; 
+      font-size: 1.02rem; 
   }
 
   /* Reduce header margins and size */
