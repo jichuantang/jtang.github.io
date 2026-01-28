@@ -168,7 +168,7 @@ blockquote footer {
 .publications li {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: none;
   line-height: 1.6;
 }
 
