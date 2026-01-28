@@ -1,4 +1,13 @@
 /* Global page and element settings ----------------------------------------------------- */
+:root {
+  --text: #1f2937;
+  --muted: #6b7280;
+  --heading: #111827;
+  --accent: #1f6feb;
+  --border: #e5e7eb;
+  --panel: #f8fafc;
+}
+
 html {
   font-size: 16px;
 }
@@ -11,7 +20,7 @@ html {
 
 @media (min-width: 1200px) {
   html {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 
@@ -19,6 +28,7 @@ body {
   font-size: 1rem;
   font-family: "Open Sans", Arial, sans-serif;
   background: #FFFFFF;
+  color: var(--text);
   line-height: 1.7;
 }
 
@@ -55,18 +65,20 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Helvetica, sans-serif;
-  color: #20364c;
-  font-weight: 500;
+  color: var(--heading);
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 h1 {
   margin-bottom: 2.75rem;
   font-size: 2.6rem;
+  line-height: 1.25;
 }
 
 h2, h3 {
   margin: 0 0 1.5rem !important;
-  color: slategray;
+  color: var(--muted);
 }
 
 h2 {
@@ -83,7 +95,7 @@ h4 {
 }
 
 h4, h5, h6 {
-  color: slategray !important;
+  color: var(--muted) !important;
 }
 
 h5 {
@@ -116,8 +128,11 @@ dt {
 }
 
 blockquote {
-  border-left-color: slategray;
-  color: slategray;
+  border-left: 4px solid var(--accent);
+  color: var(--text);
+  background: var(--panel);
+  padding: 1.2rem 1.6rem;
+  border-radius: 6px;
 }
 
 blockquote blockquote {
@@ -130,6 +145,7 @@ cite {
   font-size: 1rem !important;
   display: block;
   margin-top: 1rem;
+  color: var(--muted);
 }
 
 p {
@@ -173,20 +189,24 @@ blockquote footer {
 
 /* Links */
 #main-container a {
-  color: #1585cf;
-  font-weight: 500;
+  color: var(--accent);
+  font-weight: 600;
 }
 
 #main-container a:hover {
-  color: #1585cf;
-  border-bottom: 1px dashed #1585cf;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
   text-decoration: none;
   padding-bottom: 2px;
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */
+#main-container {
+  padding-bottom: 1.5rem;
+}
+
 #title {
-  color: #20364c;
+  color: var(--heading);
   margin-top: 2rem;
   font-weight: 600;
   font-size: 1.2rem;
@@ -194,13 +214,27 @@ blockquote footer {
 }
 
 #program {
-  color: gray;
+  color: var(--muted);
   text-align: center;
+}
+
+#contact-table td {
+  vertical-align: top;
+}
+
+#contact-table i {
+  color: var(--muted);
 }
 
 iframe {
   padding: 3px;
   border: 1px solid lightgray;
+}
+
+.img-thumbnail {
+  border-radius: 8px;
+  border-color: var(--border);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
 /* Format the nav  ---------------------------------------------------------- */
@@ -210,7 +244,7 @@ nav {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #20364c;
+  color: var(--heading);
   font-weight: 500;
 }
 
@@ -397,6 +431,15 @@ footer {
   margin-left: 2rem;
 }
 
+.panel {
+  border-color: var(--border);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+#links .panel {
+  box-shadow: none;
+}
+
 #projects .panel-default {
   border-radius: 3px;
 }
@@ -412,7 +455,7 @@ footer {
 #projects .panel-heading,
 #projects .panel-footer {
   text-align: center;
-  background: #F6F7FB;
+  background: var(--panel);
   padding: 2rem;
 }
 
@@ -444,7 +487,8 @@ footer {
   margin-bottom: 2rem;
   width: 100px;
   padding: 3px;
-  border: 1px solid silver;
+  border: 1px solid var(--border);
+  border-radius: 6px;
 }
 
 /* Lists ------------------------------------------------------------- */
@@ -462,7 +506,7 @@ dd {
 /* Customize container */
 @media only screen and (min-width: 767px) {
   .container {
-    max-width: 760px;
+    max-width: 780px;
   }
 }
 
@@ -471,7 +515,7 @@ dd {
 
   /* Remove the padding we set earlier */
   .container {
-    max-width: 1040px;
+    max-width: 1120px;
   }
 }
 
@@ -541,7 +585,7 @@ dd {
 @media (min-width: 1200px) {
   .container {
     width: 90%;
-    max-width: 1320px;
+    max-width: 1280px;
   }
 }
 
